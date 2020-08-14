@@ -1,4 +1,4 @@
-# CRUD-Website
+# Medical-Inventory-Website-using-NodeJS
 
 ***
 ## Output Images:
