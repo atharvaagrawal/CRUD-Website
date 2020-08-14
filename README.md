@@ -9,7 +9,7 @@
 2) Add Operation:
 ![](https://raw.githubusercontent.com/atharvaagrawal/CRUD-Website/master/images/Add-Operation.png)
 
-3) Top Colleges of Maharashta Admission: 
+3) View Operation: 
 ![](https://raw.githubusercontent.com/atharvaagrawal/CRUD-Website/master/images/View-Operation.png)
 
 4) Update Operation: 
