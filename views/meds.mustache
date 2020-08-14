@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Med List </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="rows">
+            <div class="col-md-12">
+                <h1> This is the page which displays list of meds.</h1>
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col"> MID </th>
+                            <th scope="col"> Medicine </th>
+                            <th scope="col"> Count </th>
+                            <th scope="col"> Brand </th>
+                            <th scope="col"> Edit </th>
+                            <th scope="col"> Delete </th>
+                        </tr>
+                    </thead>
+                    {{#rows}}
+                    <tr>
+                        <td> {{mid}} </td>
+                        <td> {{name}} </td>
+                        <td> {{count}} </td>
+                        <td> {{brand}}</td>
+                        <td>
+                            <form action="/meds/edit/{{mid}}" method="post">
+                                <button class="btn btn-success" type="submit"> Edit </button>
+                            </form>
+                        </td>
+                        <td>
+                            <form action="/meds/delete/{{mid}}" method="post">
+                                <button class="btn btn-danger" type="submit"> Delete </button>
+                            </form>
+                        </td>
+
+                    </tr>
+
+                    {{/rows}}
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

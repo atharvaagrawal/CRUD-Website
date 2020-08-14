@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Med Edit </title>
+</head>
+
+<body>
+    <h1> This is the page which Edit list of meds.</h1>
+
+
+    <form action="/meds/save/{{mid}}" method="post">
+        {{#results.rows}}
+        Mid: <input type="number"  value="{{mid}}" disabled="true">
+        <br>
+        Name: <input type="text" name="name" value="{{name}}">
+        <br>
+        Quanitity: <input type="number" name="count" value="{{count}}">
+        <br>
+        Brand: <input type="text" name="brand" value="{{brand}}">
+        <br>
+        {{/results.rows}}
+        <button type="submit"> Save </button>
+    </form>
+
+
+</body>
+
+</html>
